@@ -6,11 +6,23 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>Document</title>
+  <title>404出错啦！！！</title>
  </head>
  <body>
 	
 	<h1>404</h1>
 		
  </body>
+ <script type="text/javascript" charset="utf-8">  
+	var s="404出错啦！！！".split("");
+	for(var i=0;i<s.length;i++){
+		document.write(s[i]+"<br>");
+	}
+	function func(){  
+		s.push(s[0]);  
+		s.shift();// 去掉数组的第一个元素  
+		document.title = s.join("");  
+	}  
+	setInterval(func,500);//设置时间间隔运行  
+ </script> 		
 </html>
