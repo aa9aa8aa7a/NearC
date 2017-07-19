@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="./js/marked.js"></script>
+  <link rel="stylesheet" href="./css/typo.css">
+  <!--
+  饥人谷：http://js.jirengu.com
+   meta:vp + Tab
+   -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    body{
+      padding:20px;
+    }
+    img{
+      max-width:100%;
+    }
+  </style>
+  </head>
+<body>
+  <div id="t">
+    # 我的博客 
+    ## 通过gethub创建一个可浏览的网页！！
+    1.这是我创建的地址，你可进去看一下
+    [我的博客](https://aa9aa8aa7a.github.io/NearC/)<br>
+    <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike272%2C5%2C5%2C272%2C90/sign=203abdc8e9f81a4c323fe49bb6430b3c/9213b07eca80653820deabaf95dda144ad348251.jpg" width="150">
+    <br>
+    **露露**
+    >不管时间怎么变，我还是爱你的   --叶
+  </div>
+  <script>
+     var t = document.getElementById('t');
+     var markdown = t.innerHTML;
+     var html = marked(markdown);
+     t.innerHTML = html;
+  </script>
+</body>
+</html>
