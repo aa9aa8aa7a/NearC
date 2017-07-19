@@ -7,7 +7,7 @@ fs.readdir('./markdown',function(err,files){
     var temp = fs.readFileSync('./temp.html').toString();
     var result = temp.replace('%t%',markdown);
     var name = files[i].split('.',1);
-    fs.writeFileSync(name+'.html',result);
+    fs.writeFileSync('./boke/'+name+'.html',result);
     }
     
 
